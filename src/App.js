@@ -1,12 +1,12 @@
 import React from 'react';
-import LightComponent from "./components/LightComponent";
-import CounterComponent from "./components/CounterComponent";
+import LightContainer from "./components/LightContainer";
+import CounterContainer from "./components/CounterContainer";
 
 const App = () => {
     return (
         <div>
-          <LightComponent />
-          <CounterComponent />
+          <LightContainer />
+          <CounterContainer />
 
         </div>
     );

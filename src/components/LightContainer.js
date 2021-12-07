@@ -9,7 +9,7 @@ const mapDispatchToProps = dispatch => ({
     onSwitch: () => dispatch({ type: "SWITCH" })
 });
 
-const LightComponent = ({ light, onSwitch }) => (
+const LightContainer = ({ light, onSwitch }) => (
     <div>
         <p>{light}</p>
         <button onClick={onSwitch}>switch</button>
@@ -19,4 +19,4 @@ const LightComponent = ({ light, onSwitch }) => (
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(LightComponent);
+)(LightContainer);

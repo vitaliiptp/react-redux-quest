@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch => ({
 
 
 
-const CounterComponent = ({ counter, increment, decrement, incrementBy10, decrementBy10, reset }) => (
+const CounterContainer = ({ counter, increment, decrement, incrementBy10, decrementBy10, reset }) => (
     <div>
         <p>{counter}</p>
         <button onClick={increment}>Increment</button>
@@ -30,4 +30,4 @@ const CounterComponent = ({ counter, increment, decrement, incrementBy10, decrem
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(CounterComponent);
+)(CounterContainer);
